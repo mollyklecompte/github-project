@@ -1,9 +1,9 @@
 {
-  "name": "NAME HERE",
+  "name": "github-project",
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/mollyklecompte/javascript-template",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,5 +15,8 @@
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
     "moment": "^2.15.1"
-  }
+  },
+  "authors": [
+    "Molly LeCompte <mollyklecompte@gmail.com>"
+  ]
 }
