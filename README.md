@@ -12,7 +12,7 @@ _This app allows the user to enter a Github username, then returns a list of tha
 
 * _Clone this repository_
 * _Install all the dependencies required in the gulpfile using npm and Bower_
-* _Get an api key from Github, create a .env file in the top level of the project folder to store the api key under the variable "apiKey"_
+* _Get an api key from Github, create a .env file in the top level of the project folder to store the api key under the variable "exports.apiKey"_
 * _Enter the command "gulp serve" in terminal to start server & view app in browser_
 
 ## Known Bugs
