@@ -9,13 +9,13 @@ User.prototype.getRepos = function(username){
     console.log(response);
 
     response.forEach(function(repo) {
-       $('.reposText').append("<strong>Repository:</strong> " + repo.name + " <strong>Description:</strong> " + repo.description + "<br>");
-    });
+      if (repo.description !== null)
+       {$('.reposText').append("<strong>Name:</strong> " + repo.name + " <strong>Description:</strong> " + repo.description + "<br>");}
 
-    // for (var i=0; i < response.length; i++) {
-    //   $('.reposText').append("Repository: " + i.name + " Description: " + i.description + "<br>");
-    // }
-    // $('.showRepos').text(response.repos_url);
+       else {
+        $('.reposText').append("<strong>Repository:</strong> " + repo.name + " <strong>Description:</strong> (no description)<br>");
+       }
+    });
 
   }).fail(function(error){
     console.log(error.responseJSON.message);
